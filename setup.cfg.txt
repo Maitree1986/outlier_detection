@@ -1,0 +1,5 @@
+[categorical outlier]
+# This flag says that the code is written to work on both python 2 and python
+#3. If at all possible, it is good practice to do this. If you cannot, you
+#will need generate wheels for each python version that you support.
+universal=1
