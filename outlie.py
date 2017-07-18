@@ -8,7 +8,7 @@ def outlie(data,threshold=1):
         concat = data.apply(lambda x: ''.join(x),axis=1)
 ## This line gets a array with the frequency of each pattern in the file
         count=concat.apply(lambda x:list(concat).count(x))
-## This line g
+## This line gives the final result of -1 for the most uncommon patterns and 1 for the rest of the common patterns 
         result=count.apply(lambda x:1 if x>threshold else -1)
         return(result)
         
